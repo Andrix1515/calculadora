@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorro de Energía</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .frases {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #34495e;
+        }
+        .button {
+            padding: 15px 25px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #99a1a6;
+            color: white;
+        }
+        .button:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>¡Ahorra Energía, Cuida el Planeta!</h1>
+    
+    <div class="frases">
+        <p>"El ahorro de energía es un paso hacia un futuro sostenible."</p>
+        <p>"Cada pequeño gesto cuenta: apaga las luces que no uses."</p>
+        <p>"Usa electrodomésticos eficientes y reduce tu consumo."</p>
+        <p>"Recuerda: la energía que no consumes es energía que no necesitas generar."</p>
+    </div>
+    
+    <button class="button" onclick="location.href='index.html'">Calcular Gasto</button>
+    <button class="button" onclick="document.getElementById('ayuda').style.display='block'">Ayuda</button>
+
+    <div id="ayuda" style="display:none; margin-top:20px;">
+        <h2>Imagen de Ayuda</h2>
+        <img src="Ayuda.jpg" alt="Ayuda" style="max-width: 100%; height: auto;">
+        <button class="button" onclick="document.getElementById('ayuda').style.display='none'">Cerrar</button>
+    </div>
+
+</body>
+</html>
