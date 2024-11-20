@@ -1,3 +1,28 @@
+const costoPorKWh = 0.67;
+let electrodomesticos = [];
+let consumoMensualTotal = 0;
+
+function agregarElectrodomestico() {
+    const nombre = document.getElementById("nombre").value;
+    const potencia = parseFloat(document.getElementById("potencia").value);
+    const horas = parseFloat(document.getElementById("horas").value);
+    const minutos = parseFloat(document.getElementById("minutos").value);
+    const dias = parseFloat(document.getElementById("dias").value);
+
+    if (nombre && potencia && horas >= 0 && minutos >= 0 && dias) {
+        const horasTotales = horas + minutos / 60;
+        const consumoDiario = (potencia / 1000) * horasTotales;
+        const consumoMensual = consumoDiario * dias;
+
+        electrodomesticos.push({ nombre, consumoMensual, dias });
+
+        actualizarLista();
+        calcularGastoTotal();
+    } else {
+        alert("Por favor, complete todos los campos correctamente.");
+    }
+}
+
 function actualizarLista() {
     const lista = document.getElementById("listaElectrodomesticos");
     lista.innerHTML = "";
