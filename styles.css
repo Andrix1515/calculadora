@@ -52,6 +52,35 @@ ul {
     list-style-type: none;
     padding: 0;
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.boton-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Hacer el botón redondo */
+    font-size: 24px; /* Tamaño del ícono */
+    text-decoration: none; /* Eliminar subrayado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.boton-inicio:hover {
+    background-color: #45a049; /* Color de fondo al pasar el ratón */
+    transform: scale(1.1); /* Aumentar tamaño al pasar el ratón */
+}
 
 p {
     font-weight: bold;
