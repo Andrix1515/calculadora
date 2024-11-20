@@ -5,46 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Gasto Energético</title>
     <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Botón Redondo de Inicio</title>
 </head>
 <body>
-
     <h1>Calculadora de Gasto Energético</h1>
     <form id="energyForm">
-        <!-- Campo de texto con autocompletado -->
-        <input type="text" id="nombre" placeholder="Nombre del electrodoméstico" list="electrodomesticos" required>
-        <datalist id="electrodomesticos">
-            <!-- Lista de opciones de autocompletado -->
-            <option value="Refrigerador"></option>
-            <option value="Televisor"></option>
-            <option value="Lavadora"></option>
-            <option value="Microondas"></option>
-            <option value="Computadora"></option>
-            <option value="Aire Acondicionado"></option>
-            <option value="Calentador de Agua"></option>
-            <option value="Ventilador"></option>
-            <option value="Plancha"></option>
-            <option value="Horno Eléctrico"></option>
-            <option value="Licuadora"></option>
-            <option value="Secadora de Ropa"></option>
-            <option value="Lavavajillas"></option>
-            <option value="Cafetera"></option>
-            <option value="Aspiradora"></option>
-            <option value="Tostadora"></option>
-            <option value="Router Wi-Fi"></option>
-            <option value="Lámpara de Escritorio"></option>
-            <option value="Hervidor Eléctrico"></option>
-            <option value="Consola de Videojuegos"></option>
-            <option value="Impresora"></option>
-            <option value="Purificador de Aire"></option>
-            <option value="Televisor Smart TV"></option>
-            <option value="DVD/Blu-Ray"></option>
-            <option value="Radio/Parlantes"></option>
-            <option value="Congelador"></option>
-        </datalist>
+        <input type="text" id="nombre" placeholder="Nombre del electrodoméstico" required>
         <input type="number" id="potencia" placeholder="Potencia (W)" required>
         <input type="number" id="horas" placeholder="Horas de uso al día" required>
         <input type="number" id="minutos" placeholder="Minutos de uso al día" required>
@@ -53,14 +18,25 @@
     </form>
 
     <div class="resultado" id="resultado">
-        <h3>Resumen de consumo energético:</h3>
+        <h3>Electrodomésticos agregados:</h3>
         <ul id="listaElectrodomesticos"></ul>
-        <p><strong>Gasto energético total estimado para el mes:</strong> <span id="gastoTotal">0</span> kWh</p>
-        <p><strong>Precio total estimado para el mes:</strong> S/. <span id="precioTotal">0.00</span></p>
-        <p><strong>Ahorro total estimado del promedio:</strong> S/. <span id="ahorroTotal">0.00</span></p>
+        <p><strong>Consumo mensual total:</strong> <span id="gastoTotal">0</span> kWh</p>
+        <p><strong>Precio total:</strong> S/. <span id="precioTotal">0.00</span></p>
+    </div>
+
+    <div class="botones">
+        <button class="verde" onclick="calcularAhorro(0.25)">Ahorro Básico</button>
+        <button class="amarillo" onclick="calcularAhorro(0.35)">Ahorro Medio</button>
+        <button class="rojo" onclick="calcularAhorro(0.50)">Ahorro Extremo</button>
+    </div>
+
+    <div id="recomendaciones"></div>
+
+    <div class="botones">
+        <button onclick="irAOtraPagina()">Pagina de Inicio</button>
     </div>
 
     <script src="script.js"></script>
-    <a href="principal.html" class="boton-inicio">🏠</a>
 </body>
 </html>
+
