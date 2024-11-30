@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Botones e Imagen de Fondo</title>
+    <link rel="stylesheet" href="333.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Caja izquierda -->
+        <div class="left-box">
+            <h1>Proyecto de Física; Calculadora de Ahorro Energético</h1>
+            <p>DESCUBRE CUÁNTO PUEDES AHORRAR EN TU CONSUMO ELÉCTRICO CON NUESTRA CALCULADORA EN LÍNEA. 
+                COMPARA EL GASTO ENERGÉTICO DE TUS ELECTRODOMÉSTICOS CON PROMEDIOS USUALES Y OBTÉN 
+                RECOMENDACIONES PERSONALIZADAS PARA OPTIMIZAR TU CONSUMO. ¡AHORRA DINERO MIENTRAS CUIDAS EL MEDIO AMBIENTE!</p>
+        </div>
+
+        <!-- Caja derecha -->
+        <div class="right-box">
+            <!-- Botón 1 -->
+            <a href="index.html" class="button">
+                <img src="iconocalc.png" alt="Icono 1">
+                Calcular
+            </a>
+            <!-- Botón 2 -->
+            <button class="button" onclick="mostrarModal()">
+                <img src="iconoayud.png" alt="Icono 2">
+                Ayuda
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar la imagen -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="cerrarModal()">×</span>
+            <img src="Ayuda.jpg" alt="Imagen mostrada" class="modal-image">
+        </div>
+    </div>
+
+    <!-- Enlace al script -->
+    <script src="222.js"></script>
+</body>
+</html>
+
+
