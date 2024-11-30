@@ -62,5 +62,5 @@ function calcularAhorro(reduccion) {
     });
 }
 function irAOtraPagina() {
-    window.location.href = 'principal.html'; // Cambia 'otra_pagina.html' por la URL o archivo que desees
+    window.location.href = '111.html'; // Cambia 'otra_pagina.html' por la URL o archivo que desees
 }
