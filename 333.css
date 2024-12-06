@@ -125,3 +125,13 @@ body {
 .close-button:hover {
     color: red;
 }
+body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    margin: 0; /* Elimina el margen por defecto */
+}
+.gif-container {
+    margin-left: 20px; /* Mueve el GIF un poco a la derecha */
+}
